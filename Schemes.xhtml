@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>Divine Matrimony</title>
+<link rel="stylesheet" type="text/css" href="common.css"/>
+<!-- JQuery Section -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    function close_accordion_section() {
+        $('.accordion .accordion-section-title').removeClass('active');
+        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+ 
+    $('.accordion-section-title').click(function(e) {
+        // Grab current anchor value
+        var currentAttrValue = $(this).attr('href');
+ 
+        if($(e.target).is('.active')) {
+            close_accordion_section();
+        }else {
+            close_accordion_section();
+ 
+            // Add active class to section title
+            $(this).addClass('active');
+            // Open up the hidden content panel
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+        }
+ 
+        e.preventDefault();
+    });
+});
+</script>
+</head>
+<body>
+ <div class="tabs"><a href="Welcome.xhtml">Back to Home</a></div>
+<h1>Schemes</h1>
+<table>
+<tr>
+<td>
+<img src="scheme.jpg" width="300px" height="200px" /></td>
+<td>
+<div class="transbox">
+<p> " A Great Marriage isn't something that just happens; it's something that must be created!!!" This creation that is happens in everybody's life is the epic of their life 
+and Divine Matrimony is their to help you creating and making the best part 'best' in your life. Your epic will become great by finiding your best partner through us.</p>
+<p>"The Real Act of marriage takes place in the heart, not in ballroom or any other place. It's a choice you make, not just on the wedding day, but over and over again."
+That choice is very difficult to be taken, so we are here to help you out by personally understanding what your heart really wants.</p>
+<p>Divine Matrimony provides various schemes to help you find your partner. Choose the one that you feel is comfortable to you and enjoy your priviledges.
+The priviledge of each scheme is explained below and <a href="Register.xhtml">Click here to Register</a>. Enjoy your time in Divine Matrimony!!! </p>
+</div></td>
+</tr>
+</table>
+<div class="transbox1">
+<div class="accordion">
+ <div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-1">Scheme A</a>
+<div id="accordion-1" class="accordion-section-content">
+<p>You can register for free!!! You can be a free member of Divine Matrimony but the profile views are not allowed. Your profile can be viewed by our premium members and can be contacted by them.Wish you good luck choosing your partner!!!</p>
+</div></div>
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-2">Scheme B</a>
+<div id="accordion-2" class="accordion-section-content">
+<p>Just 15 pounds!!! </p>
+<p>You can become a member of Divine Matrimony with less expense!!! Your a member of the Divine Matrimony but the profile views are restrited, you can view around 20 profiles. Your profile can be viewed by our premium members and can be contacted by them.Wish you good luck choosing your partner!!! </p>
+</div></div>
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-3">Scheme C</a>
+<div id="accordion-3" class="accordion-section-content">
+<p> Just 25 pounds!!! </p>
+<p>Become our premium member!!! You can view all our profiles and also contact all the other members. You will be invited for all the get together and have a lot of free allowances. You will also be loaded with surprise gifts on the day of your wedding as a part of our greeting.Wish you good luck choosing your partner!!!</p>
+</div></div>
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-4">Scheme D</a>
+<div id="accordion-4" class="accordion-section-content">
+<p> Just 50 pounds!!! </p>
+<p>Become our superb premium member!!! You can view all our profiles and also contact all the other members.You will be invited for all the get together and have a lot of free allowances. You will also be loaded with surprise gifts on the day of your wedding as a part of our greeting. You can consult our expert for councelling which will help you decide about interest and find a partner of your kind.Wish you good luck choosing your partner!!!</p>
+</div></div>
+<div class="accordion-section">
+<a class="accordion-section-title" href="#accordion-5">Scheme E</a>
+<div id="accordion-5" class="accordion-section-content">
+<p> Just 100 pounds!!! </p>
+<p>Become our star premium member!!! You can view all our profiles and also contact all the other members.You will be invited for all the get together and have a lot of free allowances. You will also be loaded with surprise gifts on the day of your wedding as a part of our greeting. You can consult our expert for councelling which will help you decide about interest and find a partner of your kind. You can also use all our services that we provide for your marriage. Wish you good luck choosing your partner!!!</p>
+</div></div>
+</div>
+<h3 style="color:#ffffff">Proceed to Registeration -><a href="Register.xhtml">Click Here to Register </a></h3>
+</div>
+</body>
+</html>

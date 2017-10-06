@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>Divine Matrimony</title>
+<link rel="stylesheet" type="text/css" href="common.css"/>
+<!-- JQuery Section -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function() {
+    jQuery('.tabs1 .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+ 
+        // Show/Hide Tabs
+        jQuery('.tabs1 ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
+</script>
+</head>
+<body>
+<div class="tabs"><a href="Welcome.html">Back to Home</a></div>
+<h1>Wedding Directory</h1>
+<img src="service.jpg" width="100%" height="330px" />
+<table>
+<tr>
+<td>
+<img src="services.jpg" width="300px" height="300px" /></td>
+<td>
+<div class="transbox">
+<p>"Marriage is a gift from God to us. The quality of our marriage is a gift from us to him".
+So, the quality of marriage should be at its best. Divine Matrimony is there to help you in this task too!!! </p>
+<p>We are here to make your marriage as the best event not only for you but for guests too. 
+This Wedding Planner helps you to decide on the decorations,beauticians, caterers, hotels and all the services that are required for the marriage. 
+Help yourself with details that are provided below about all the services that are needed for a wedding.</p>
+<p>You can approach the people incharge on your own or through us, it depends on the scheme selected by you. 
+After deciding on the services,if you decide to go through us and if your scheme does'nt allow that, you are welcome to change your scheme. 
+You can have a look at the schemes again. <a href="Schemes.xhtml">Click here to view the schemes</a>
+</p> 
+</div></td>
+</tr>
+</table>
+<div class="transbox1">
+<div class="tabs1">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Beauticians</a></li>
+        <li><a href="#tab2">Caterers</a></li>
+        <li><a href="#tab3">Entertainment</a></li>
+        <li><a href="#tab4">Invitations</a></li>
+        <li><a href="#tab5">Marriage Halls</a></li>
+    </ul>
+ 
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <p>Make yourself glowing on the day of your marriage!!!</p>
+            <p>
+            <ul>
+             <li><p>London Tanning and Beauty?, email: www.londontanningandbeauty.co.uk/?, 12 Notting Hill Gate-London , Ph: 020 7243 6932 </p></li>
+             <li><p>Beauty Salon London?, email: www.salonhouse.co.uk/?, 42 Grays Inn Road-London, Ph:0674536876</p></li>
+             <li><p>Beau-TI Spot(beauty salon), email: www.beau-tispot.co.uk/?, 7 Clarendon parade-London, Ph:07674899757</p></li>
+            </ul>
+            </p>
+        </div>
+ 
+        <div id="tab2" class="tab">
+            <p>Serve yourself with Mouth Watering Food on the special day of your life!!!</p>
+             <p><ul>
+             <li><p>London Event Catering?, email: www.total-hospitality.co.uk/??, Ph: 020 7483 6932 </p></li>
+             <li><p>Events Catering London?, email: www.thelondonkitchen.com/?, Ph:0674532839</p></li>
+             <li><p>Event Catering Service?, email: www.clissoldarms.co.uk?, Ph:07672109757</p></li>
+            </ul>
+            </p>
+        </div>
+ 
+        <div id="tab3" class="tab">
+            <p>Marriage is made unique with entertainers!!!</p>
+             <p>
+            <ul>
+             <li><p>London entertainers?, email: www.londonentertainer.co.uk/?, Ph: 02379835785 </p></li>
+             <li><p>Best Gang?, email: www.bestgang.co.uk/?, Ph:0674533876</p></li>
+             <li><p>Beaux-Batons, email: www.beauxbatons.co.uk/?, Ph:07673478757</p></li>
+            </ul>
+            </p>
+        </div>
+ 
+        <div id="tab4" class="tab">
+            <p>Invite everyone with glossy covers!!!</p>
+             <p>
+            <ul>
+             <li><p>London Marriage Cards?, email: www.londonmarriagecards.co.uk/?, 18 Notting Hill Gate-London , Ph: 020 7546 9932 </p></li>
+             <li><p>Glossy Invitors?, email: www.glossyinvitors.co.uk/?, 47 Grays Inn Road-London, Ph:0433624476</p></li>
+             <li><p>Great Creators, email: www.greatcreators.co.uk/?, 18 Clarendon parade-London, Ph:074328379757</p></li>
+            </ul>
+            </p>
+        </div>
+       
+      <div id="tab5" class="tab">
+            <p>Heaven at your place!!!</p>
+             <p>
+            <ul>
+             <li><p>London Marriage Hall?, email: www.londonmarriagehall.co.uk/?, 18 Hounslow West-London , Ph: 020 7326 9932 </p></li>
+             <li><p>Egham Marriage Hall, email: www.eghammarriagehall.co.uk/?, 47 Egham Hill-UK, Ph:043345476</p></li>
+             <li><p>Southall Hall, email: www.southallhall.co.uk/?, 24 Western Road-London, Ph:074328379757</p></li>
+            </ul>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

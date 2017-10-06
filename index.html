@@ -1,0 +1,152 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>Divine Matrimony</title>
+<link rel="stylesheet" type="text/css" href="welcome.css"/>
+<script type="text/javascript" src="js/lib/jquery-1.11.1.min.js" ></script>
+   <script> 
+     $(function(){ $("head").load("header.html") });
+   </script>
+
+<script type="text/javascript">
+currentIndx=0;
+
+MyImages=new Array();
+
+MyImages[0]='girl21.gif';
+
+MyImages[1]='boy22.gif';
+
+MyImages[2]='girl23.gif';
+
+MyImages[3]='boy24.gif';
+
+MyImages[4]='girl25.gif';
+
+MyImages[5]='boy26.gif';
+imagesPreloaded = new Array(4)
+var i;
+for (i = 0; i < MyImages.length ; i++)
+
+{
+
+imagesPreloaded[i] = new Image(1300,200)
+
+imagesPreloaded[i].src=MyImages[i]
+
+}
+function newImage() {
+
+// Makes a random, whole number between 0 and 3
+
+currentIndx=Math.round(Math.random()*5)
+
+document.theImage.src=imagesPreloaded[currentIndx].src
+
+}
+function formValidator()
+  {if(login.username.value == "" ) {
+alert("Please choose your username");
+return false;}
+if(login.password.value == "" ) {
+alert("Please choose your password");
+return false;}
+}
+</script> 
+</head>
+<body onload="newImage()">
+ <div class="tabs"><a href="Welcome.html">Home</a></div>
+ <div class="tabs"><a href="Schemes.xhtml">Schemes</a></div>
+ <div class="tabs"><a href="Register.html">Register</a></div>
+ <div class="tabs"><a href="Expert.xhtml">Ask an Expert</a></div>
+ <div class="tabs"><a href="Services.xhtml">Services</a></div>
+ <div class="tabs"><a href="Events.xhtml">News/Events</a></div>
+
+ <div class="body_content"></div>
+<img src="marriage_logo.jpg" id="logo"/>
+<h1>Welcome to Divine Matrimony</h1>
+<!-- Dynamic Content Change -->
+<table>
+<tr>
+<td>
+
+<img src="girl21.gif" name="theImage" id="theImage" alt="Slide Show" height="200px" width="1300px" />
+
+</td>
+
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<img src="wedding.jpg" width="900px" height="300px" />
+</td>
+
+<td>
+<div class="transbox1">
+<p> Login </p>
+<form name='login' onsubmit='myFunction()'>
+<p>Username:
+<input type="text" name="username" /></p>
+<p>Password:
+<input type="password" name="password" /></p>
+<input type="submit" value="Login" onclick="return formValidator()" align="center"/>
+</form>
+<script>
+function myFunction() {
+    alert("You have successfully logged in! You can now view the profiles");
+    myWin=open("Profile.xhtml","profiles","scrollbars, width=1000,height=1000");
+}
+
+</script>
+
+<a href="Register.xhtml" align="center">Sign Up as a New User</a>
+</div>
+</td>
+
+</tr>
+</table>
+<div class="transbox">
+<p>"A Perfect marriage is just two imperfect people who refuse to give up on each other". 
+When you think it's time for you to find an imperfect person perfect for you, just peep in to have a look at Divine Matrimony.</p>  
+<p>Divine Matrimony provides a superior matchmaking experience to people all over the world.  
+It has various schemes through which a person can easily find their better-half. 
+No one is stranger with Divine Matrimony, this helps people discover new friendships, interests and relationships in an entertaining way.</p>
+<p>
+Divine Matrimonial is a relationship and wedding portal that provides it's users with information, expert advice, and services for them to better manage all aspects of their wedding experience and relationships.
+It is the only portal where users can find information and advice on everything from wedding planning to relationships as services are also provided where you can consult an expert.
+The 'Ask an Expert' section will help you to decide as renowned counsellors will be there to answer your queries.</p>
+</div>
+
+<!-- Services-->
+<table>
+<tr>
+<td>
+<a href="Schemes.xhtml"><img src="scheme_logo.jpg" width="300px" height="300px"/></a>
+<p style="font-weight:bold;">Schemes are available in Divine Matrimony where you can interactively find your life partner. This will help you to analyse your interests and you can approch us, feel free to contact us regarding your registeration.Click on the image for further details.Wish you all good luck, hope you find yor partner soon!!!</p>
+</td>
+<td>
+<a href="Register.xhtml"><img src="register_logo.jpg" width="300px" height="300px"/></a>
+<p style="font-weight:bold;">Selecting the scheme through which your going to be a part of Divine Matrimony has made you move to the next step in the process.
+Register to become a member and access all the profiles/photos by clicking here.Wish you all good luck, hope you find yor partner soon!!!</p></td>
+</tr>
+<tr>
+<td>
+<a href="Expert.xhtml"><img src="expert_logo.jpg" width="300px" height="300px"/></a>
+<p style="font-weight:bold;">Divine Matrimony also provides consultation services, where you can meet an expert councellor who will help you to choose your partner according to your interest. The contact details of all the councellors are published in the website. You can consult them in person or through Divine Matrimony.
+Click on the image for further details.Wish you all good luck, hope you find yor partner soon!!!</p></td>
+<td>
+<a href="Services.xhtml"><img src="services_logo.jpg" width="300px" height="300px"/></a>
+<p style="font-weight:bold;">Divine Matrimony makes you to work at ease for your marriage. We are there to take care of all the arrangements on the day of your marriage. The contact details of all the services that are required is published in the website.
+Click on the image for further details.Wish you all good luck, hope you find yor partner soon!!!</p></td>
+</tr>
+</table>
+<a href="Events.xhtml"><img src="events_logo.jpg" width="300px" height="300px" align="center"/></a>
+<p style="font-weight:bold;" align="center">Divine Matrimony organises a get together to unite all the members. This helps in further interaction and helps us to meet you in person. The information of these parties are published in the News/Events page in our website. To know about our next meeting, just click on the image.
+Wish you all good luck, hope you find yor partner soon!!!</p>
+<div class="transbox5">
+<p>
+Contact Us-Address: 236, Heston Road, Southall, Postcode: UB3678</p>
+<p> Phone Numbers: +44 7896 765346 / +44 7456 908776</p></div>
+</body>
+</html>
